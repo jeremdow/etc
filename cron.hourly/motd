@@ -1,0 +1,4 @@
+#!/bin/sh
+
+pacman -Sy
+echo -e "$(run-parts /etc/motd.d)\n" > /etc/motd

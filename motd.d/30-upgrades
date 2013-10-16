@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[[ $(pacman -Qu) ]] && echo "
+Upgrades:
+$(pacman -Qu)"
