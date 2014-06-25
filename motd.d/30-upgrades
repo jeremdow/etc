@@ -1,5 +1,7 @@
 #!/bin/sh
 
+pacman -Sy > /dev/null 2>&1
+
 [[ $(pacman -Qu) ]] && echo "
 Upgrades:
 $(pacman -Qu)"
